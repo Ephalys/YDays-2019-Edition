@@ -3,12 +3,10 @@ var plugins     = require('gulp-load-plugins')({ camelize: true });
 var cleanCSS    = require('gulp-clean-css');
 var bs          = require('browser-sync');
 var reload      = bs.reload;
-//var pngquant    = require('imagemin-pngquant');
-//var gutil       = require('gulp-util');
 
 var paths = {
     root_path: './',
-    bower: './bower_components',
+    npm: './node_modules',
     assets: './assets/',
     tpl: {
         watch: [
@@ -31,8 +29,7 @@ var paths = {
         ],
         src: [
             './assets/css/vendor/*.css',
-            './bower_components/bootstrap/dist/css/bootstrap.min.css',
-            './bower_components/plyr/dist/plyr.css',
+            './node_modules/bootstrap/dist/css/bootstrap.min.css',
             './assets/css/*.css',
         ],
         dist: './assets/css/dist/'
@@ -43,11 +40,9 @@ var paths = {
         ],
         src: [
             './assets/js/vendor/*.js',
-            './bower_components/bootstrap/dist/js/bootstrap.min.js',
-            './bower_components/plyr/dist/plyr.polyfilled.min.js',
+            './node_Modules/bootstrap/dist/js/bootstrap.min.js',
             "./bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
             "./bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js",
-            "./bower_components/Snap.svg/dist/snap.svg-min.js",
             './assets/js/app.js'
         ],
         dist: './assets/js/dist/'
