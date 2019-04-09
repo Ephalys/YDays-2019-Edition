@@ -1,0 +1,18 @@
+body{
+  font-family: $font-text-arial-MTPro-light;
+  font-weight: 600;
+  color: $light-dark;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
