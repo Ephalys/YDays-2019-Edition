@@ -2,11 +2,16 @@
     $(document).ready(function () {
         var app = {
             init: function () {
-                app.helloWorld();
+                app.navbarOnScroll();
             },
 
-            helloWorld: function(){
-                console.log('Hello world !')
+            navbarOnScroll: function(){
+                $(function () {
+                    $(document).scroll(function () {
+                        var $nav = $(".navbar");
+                        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                    });
+                });
             }
         };
         app.init();
