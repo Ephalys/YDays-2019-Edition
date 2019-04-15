@@ -9,10 +9,12 @@
             navbarOnScroll: function(){
                 $(function () {
                     var $nav = $(".navbar");
+                    //Check scroll position on reload
                     if($(this).scrollTop() > $nav.height()) {
                         $nav.toggleClass('scrolled');
                         app.checkNavbarScroll($nav);
                     }
+                    //Toggle Class on Scroll
                     $(document).scroll(function () {
                         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
                         app.checkNavbarScroll($nav);
