@@ -11,7 +11,7 @@ section {
     text-transform: uppercase;
   }
 }
-#footer {
+.footer {
   background: $color_tropical_rain_forest_approx !important;
   h5 {
     // padding-left: 10px;
@@ -53,12 +53,12 @@ section {
       padding: 3px 0;
       a {
         color: $white;
-        // i {
-        //   margin-right: 5px;
-        //   font-size: 14px;
-        //   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-        //   transition: 0.5s all ease;
-        // }
+        i {
+          margin-right: 5px;
+          font-size: 14px;
+          //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+          transition: 0.5s all ease;
+        }
         &:hover {
           color: $color_gallery_approx;
         }
@@ -82,7 +82,6 @@ section {
       }
       &:hover {
         padding: 3px 0;
-        margin-left: 5px;
         font-weight: 400;
         a i {
           font-weight: 400;
