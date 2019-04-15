@@ -11,6 +11,11 @@
                     $(document).scroll(function () {
                         var $nav = $(".navbar");
                         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                        if($nav.hasClass('scrolled')){
+                            $('.navbar img').attr('src', 'assets/img/logo-diagnostik.png');
+                        } else {
+                            $('.navbar img').attr('src', 'assets/img/logo-diagnostik-blanc.png');
+                        }
                     });
                 });
             },
