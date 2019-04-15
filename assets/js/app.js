@@ -3,6 +3,7 @@
         var app = {
             init: function () {
                 app.navbarOnScroll();
+                app.homeSlick();
             },
 
             navbarOnScroll: function(){
@@ -11,6 +12,12 @@
                         var $nav = $(".navbar");
                         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
                     });
+                });
+            },
+            homeSlick: function () {
+                $('.home-slider').slick({
+                    dots: true,
+                    arrows: false
                 });
             }
         };
