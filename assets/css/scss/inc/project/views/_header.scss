@@ -5,14 +5,46 @@
   transition: all .3s;
   z-index: 1000;
 
-  &.scrolled {
+  .icon-bar {
+    width: 22px;
+    height: 2px;
     background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(28,88,152,.5);
-    transition: all .3s;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+  }
 
-    .navbar-nav .nav-link {
-      color: #333;
-    }
+
+  .navbar-toggler, .navbar-toggler:focus {
+    border: none;
+    background: transparent !important;
+    outline: 0;
+  }
+
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
   }
   .navbar-brand {
     img {
@@ -26,5 +58,22 @@
 
   .navbar-nav .nav-link {
     color: white;
+  }
+
+
+  &.scrolled {
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(28,88,152,.5);
+    transition: all .3s;
+
+
+    .icon-bar {
+      background-color: black;
+      display: block;
+    }
+
+    .navbar-nav .nav-link {
+      color: #333;
+    }
   }
 }

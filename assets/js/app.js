@@ -8,16 +8,23 @@
 
             navbarOnScroll: function(){
                 $(function () {
+                    var $nav = $(".navbar");
+                    if($(this).scrollTop() > $nav.height()) {
+                        $nav.toggleClass('scrolled');
+                        app.checkNavbarScroll($nav);
+                    }
                     $(document).scroll(function () {
-                        var $nav = $(".navbar");
                         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-                        if($nav.hasClass('scrolled')){
-                            $('.navbar img').attr('src', 'assets/img/logo-diagnostik.png');
-                        } else {
-                            $('.navbar img').attr('src', 'assets/img/logo-diagnostik-blanc.png');
-                        }
+                        app.checkNavbarScroll($nav);
                     });
                 });
+            },
+            checkNavbarScroll: function(item) {
+                if(item.hasClass('scrolled')){
+                    $('.navbar img').attr('src', 'assets/img/logo-diagnostik.png');
+                } else {
+                    $('.navbar img').attr('src', 'assets/img/logo-diagnostik-blanc.png');
+                }
             },
             homeSlick: function () {
                 $('.home-slider').slick({
