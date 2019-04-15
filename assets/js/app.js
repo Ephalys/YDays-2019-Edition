@@ -1,9 +1,6 @@
 (function($) {
     $(document).ready(function () {
         var app = {
-            state : {
-                pageOffset: ''
-            },
             init: function () {
                 app.helloWorld();
             },
