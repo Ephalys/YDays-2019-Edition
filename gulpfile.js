@@ -30,6 +30,8 @@ var paths = {
         src: [
             './assets/css/vendor/*.css',
             './node_modules/bootstrap/dist/css/bootstrap.min.css',
+            './node_Modules/slick-carousel/slick/slick.css',
+            './node_Modules/slick-carousel/slick/slick-theme.css',
             './assets/css/*.css',
         ],
         dist: './assets/css/dist/'
@@ -41,8 +43,7 @@ var paths = {
         src: [
             './assets/js/vendor/*.js',
             './node_Modules/bootstrap/dist/js/bootstrap.min.js',
-            "./bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
-            "./bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js",
+            './node_Modules/slick-carousel/slick/slick.min.js',
             './assets/js/app.js'
         ],
         dist: './assets/js/dist/'
