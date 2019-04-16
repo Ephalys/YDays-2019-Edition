@@ -53,7 +53,7 @@
   }
 
   .navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .show>.nav-link {
-    color: #24c6dc;
+    color: $light-blue;
   }
 
   .navbar-nav .nav-link {
@@ -74,6 +74,9 @@
 
     .navbar-nav .nav-link {
       color: #333;
+    }
+    .navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .show>.nav-link {
+      color: $light-blue;
     }
   }
 }
