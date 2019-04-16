@@ -25,11 +25,27 @@ a{
   color: white;
   font-size: 18px;
   font-weight: 600;
+  transition: all .3s;
+
+  &:hover {
+    background-color: white;
+    transition: all .3s;
+    color: $light-blue;
+  }
 }
 
 .blue-btn {
   border: 2px solid $light-blue;
   color: $light-blue;
+  background: linear-gradient(to right, white, white);
+  transition: all .3s;
+
+  &:hover {
+    background: linear-gradient(to right, $light-blue2 ,$light-blue);
+    border: 2px solid $light-blue;
+    transition: all .3s;
+    color: white;
+  }
 }
 
 

@@ -33,6 +33,10 @@
     }
     
     .home-slider_block_left {
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      transition: background .3s,border-radius .3s,opacity .3s;
       @media (max-width: 767px) {
         display: none;
       }
