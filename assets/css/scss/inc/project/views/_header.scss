@@ -31,6 +31,12 @@
     .home-slider_block_left, .home-slider_block_right {
       padding: 50px;
     }
+    
+    .home-slider_block_left {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
 
     .home-slider_block_right {
       color: white;
