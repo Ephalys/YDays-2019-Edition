@@ -1,10 +1,8 @@
 .home-slider {
   width: 100%;
-  padding-top: 66px;
   background: #24C6DC;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 
   &.slick-dotted.slick-slider {
     margin-bottom: 0;
@@ -25,8 +23,13 @@
 
   .home-slider_block {
     width: 100%;
-    height: 100%;
     display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    transition: background .3s,border-radius .3s,opacity .3s;
 
     .home-slider_block_left, .home-slider_block_right {
       padding: 50px;
@@ -41,7 +44,7 @@
     .home-slider_block_right {
       color: white;
       h1 {
-        font-size: 50px;
+        font-size: 60px;
         margin-bottom: 40px;
       }
       .slider-text {
