@@ -32,6 +32,7 @@ var paths = {
             './node_modules/bootstrap/dist/css/bootstrap.min.css',
             './node_Modules/slick-carousel/slick/slick.css',
             './node_Modules/slick-carousel/slick/slick-theme.css',
+            './node_modules/@fortawesome/fontawesome-free/css/all.css',
             './assets/css/*.css',
         ],
         dist: './assets/css/dist/'
@@ -44,11 +45,11 @@ var paths = {
             './assets/js/vendor/*.js',
             './node_Modules/bootstrap/dist/js/bootstrap.min.js',
             './node_Modules/slick-carousel/slick/slick.min.js',
+            './node_modules/@fortawesome/fontawesome-free/js/all.js',
             './assets/js/app.js'
         ],
         dist: './assets/js/dist/'
     }
-
 };
 
 gulp.task('default', ['watch']);
@@ -84,7 +85,6 @@ gulp.task('js', ['checkJS'], function () {
     return gulp.src(paths.js.src)
         .pipe(plugins.plumber())
         .pipe(plugins.concat('app.min.js'))
-        .pipe(plugins.uglify())
         .pipe(gulp.dest(paths.js.dist))
 });
 
@@ -96,4 +96,7 @@ gulp.task('tpl', function(){
 gulp.task('watch', ['js', 'css'], function () {
     gulp.watch(paths.sass.watch, ['css']).on('change', reload);
     gulp.watch(paths.js.src, ['js']).on('change', reload);
+    gulp.src([
+        './node_modules/@fortawesome/fontawesome-free/webfonts/*'])
+        .pipe(gulp.dest('./assets/css/webfonts/'));
 });
