@@ -97,6 +97,11 @@ gulp.task('watch', ['js', 'css'], function () {
     gulp.watch(paths.sass.watch, ['css']).on('change', reload);
     gulp.watch(paths.js.src, ['js']).on('change', reload);
     gulp.src([
-        './node_modules/@fortawesome/fontawesome-free/webfonts/*'])
+        './node_modules/@fortawesome/fontawesome-free/webfonts/*',
+    ])
         .pipe(gulp.dest('./assets/css/webfonts/'));
+    gulp.src([
+        './node_Modules/slick-carousel/slick/fonts/*',
+    ])
+        .pipe(gulp.dest('./assets/css/dist/fonts/'));
 });
