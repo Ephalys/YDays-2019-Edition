@@ -1,8 +1,9 @@
 .footer {
+  padding: 20px;
   @media (max-width:767px) {
     padding-top: 50px;
   }
-  background: $color_tropical_rain_forest_approx !important;
+  background: $color_tropical_rain_forest_approx ;
 
   .section-title {
     text-align: center;
@@ -29,17 +30,14 @@
   }
   a {
     color: $white;
-    text-decoration: none !important;
+    text-decoration: none ;
     background-color: transparent;
   }
   .text-md-left {
     @media (min-width: 768px) {
-      text-align: left !important;
+      text-align: left ;
       padding: 0 0 20px;
     }
-  }
-  .footer-block{
-    margin: 10px;
   }
   ul {
     &.social li {
