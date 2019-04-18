@@ -1,0 +1,26 @@
+.team {
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .team-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .team-member {
+      text-align:center;
+      margin: 20px 0;
+      img {
+        max-height: 200px;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+    }
+  }
+}
