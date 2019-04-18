@@ -1,5 +1,15 @@
 .intro {
-  padding: 80px;
+  &.blue-bg {
+    h3, .intro-text {
+      color: white;
+    }
+    .main-btn {
+      border-color: white;
+      &:hover {
+        border: white;
+      }
+    }
+  }
   h3 {
     font-size: 32px;
     color: $light-blue;
