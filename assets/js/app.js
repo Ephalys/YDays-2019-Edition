@@ -32,13 +32,16 @@
             homeSlick: function () {
                 $('.home-slider').slick({
                     dots: true,
-                    arrows: false
+                    arrows: false,
+                    autoplay: true,
+                    infinite: true,
+                    autoplaySpeed: 4000,
                 });
             },
             partnersSlick: function() {
                 $('.partners-slider').slick({
                     dots: true,
-                    arrows: false
+                    arrows: false,
                 });
             }
         };
