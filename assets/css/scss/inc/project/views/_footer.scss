@@ -1,14 +1,11 @@
 .footer {
   padding: 50px 20px 0;
-  @media (max-width:767px) {
-    padding-top: 50px;
+  @media (max-width: 767px) {
+    padding: 20px 20px 0;
   }
 
   .footer-block {
     padding:10px;
-    &:first-child {
-      padding: 0 10px;
-    }
   }
 
   .section-title {
@@ -30,9 +27,20 @@
       margin-bottom: 10px;
     }
   }
-  img {
-    position: relative;
-    height: 70px;
+  .img-block {
+    padding: 0 10px;
+    @media (max-width:767px) {
+      padding: 10px 0;
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+      @media (max-width: 767px) {
+        width: 80%;
+        margin: auto;
+      }
+    }
   }
   a {
     color: $white;
@@ -85,16 +93,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $white;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+      padding: 0;
+    }
 
     div {
-      padding: 0 10px;
-      font-size: 12px;
-      color: $white;
       @media (max-width: 768px) {
         text-align: center;
         width:100%;
         padding: 10px;
-        font-size: 16px;
       }
     }
   }
@@ -106,7 +116,6 @@
     }
   }
   .privacy {
-    font-size: 12px;
     @media (max-width: 768px) {
       text-align: center;
       width:100%;
