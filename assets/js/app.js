@@ -5,6 +5,7 @@
                 app.navbarOnScroll();
                 app.homeSlick();
                 app.partnersSlick();
+                app.smoothScroll();
             },
 
             navbarOnScroll: function(){
@@ -43,6 +44,18 @@
                     dots: true,
                     arrows: false,
                 });
+            },
+            smoothScroll: function() {
+                $('a[href*="#"]').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate(
+                        {
+                            scrollTop: $($(this).attr('href')).offset().top,
+                        },
+                        500,
+                        'linear'
+                    )
+                })
             }
         };
         app.init();
