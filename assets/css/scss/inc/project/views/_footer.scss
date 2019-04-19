@@ -94,9 +94,9 @@
     align-items: center;
     justify-content: center;
     color: $white;
+    font-size: 12px;
 
     @media (max-width: 767px) {
-      font-size: 12px;
       padding: 0;
     }
 
