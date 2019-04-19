@@ -62,6 +62,11 @@
   .navbar-nav .nav-link {
     color: white;
     font-weight: 500;
+    transition: all .3s;
+
+    &:hover {
+      transition: all .3s;
+    }
   }
 
 
@@ -78,6 +83,12 @@
 
     .navbar-nav .nav-link {
       color: #333;
+      transition: all .3s;
+
+      &:hover {
+        color: $light-blue;
+        transition: all .3s;
+      }
     }
     .navbar-nav .active>.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .show>.nav-link {
       color: $light-blue;
