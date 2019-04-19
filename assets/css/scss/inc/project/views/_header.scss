@@ -37,6 +37,9 @@
 
       .home-slider_block_left, .home-slider_block_right {
         padding: 50px;
+        @media (max-width: 767px) {
+          padding:20px 0;
+        }
       }
 
       .home-slider_block_left {
@@ -51,12 +54,20 @@
         h1 {
           font-size: 60px;
           margin-bottom: 40px;
+
+          @media (max-width:767px) {
+            font-size: 35px;
+          }
         }
 
         .slider-text {
           font-size: 20px;
           line-height: 24px;
           margin-bottom: 40px;
+
+          @media (max-width:767px) {
+            font-size: 16px;
+          }
         }
       }
     }
