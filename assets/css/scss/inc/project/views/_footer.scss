@@ -5,7 +5,7 @@
   }
 
   .footer-block {
-    margin: auto;
+    padding:10px;
     @media (min-width: 576px){
         -ms-flex: 0 0 33.333333%;
         -moz-box-flex: 0;
@@ -121,7 +121,6 @@
     }
   }
   .privacy {
-    margin: auto;
     @media (max-width: 768px) {
       text-align: center;
       width:100%;
