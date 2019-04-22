@@ -6,6 +6,11 @@
 
   .footer-block {
     padding:10px;
+    @media (min-width: 576px){
+        -ms-flex: 0 0 33.333333%;
+        -moz-box-flex: 0;
+        flex: 1 0 0;
+    }
   }
 
   .section-title {
