@@ -1,6 +1,6 @@
 .products {
   &.blue-bg {
-    h3, .products-text {
+    .products-text {
       color: white;
     }
     .main-btn {
@@ -9,11 +9,6 @@
         border: white;
       }
     }
-  }
-  h3 {
-    font-size: 32px;
-    color: $light-blue;
-    margin-bottom: 20px;
   }
   .products-text {
     font-size: 18px;
