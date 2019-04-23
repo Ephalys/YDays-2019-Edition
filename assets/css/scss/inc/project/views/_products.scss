@@ -32,5 +32,9 @@
     font-weight: 300;
     line-height: 26px;
     margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
