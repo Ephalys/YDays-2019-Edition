@@ -33,6 +33,7 @@ var paths = {
             './node_Modules/slick-carousel/slick/slick.css',
             './node_Modules/slick-carousel/slick/slick-theme.css',
             './node_modules/@fortawesome/fontawesome-free/css/all.css',
+            './node_modules/aos/dist/aos.css',
             './assets/css/*.css',
         ],
         dist: './assets/css/dist/'
@@ -46,6 +47,7 @@ var paths = {
             './node_Modules/bootstrap/dist/js/bootstrap.min.js',
             './node_Modules/slick-carousel/slick/slick.min.js',
             './node_modules/@fortawesome/fontawesome-free/js/all.js',
+            './node_modules/aos/dist/aos.js',
             './assets/js/app.js'
         ],
         dist: './assets/js/dist/'
