@@ -43,12 +43,13 @@ a{
 .blue-btn {
   border: 2px solid $light-blue;
   color: $light-blue;
+
   background: linear-gradient(to right, white, white);
   transition: all .3s;
 
   &:hover {
     background: linear-gradient(to right, $light-blue2 ,$light-blue);
-    border: 2px solid $light-blue;
+    border: 2px solid $light-blue!important;
     transition: all .3s;
     color: white;
   }
