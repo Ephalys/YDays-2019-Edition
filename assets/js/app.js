@@ -1,4 +1,7 @@
 (function($) {
+    $(window).on('load', function(){
+        $(".loader-block").fadeOut();
+    });
     $(document).ready(function () {
         var app = {
             init: function () {
